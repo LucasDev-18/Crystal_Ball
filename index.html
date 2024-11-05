@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bola de Cristal</title>
+    <link href="src/output.css" rel="stylesheet" />
+    <link
+      rel="shortcut icon"
+      href="https://cdn-icons-png.flaticon.com/512/616/616655.png"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body
+    class="gradient w-full min-h-screen flex items-center justify-center text-center h-14 bg-gradient-to-r text-slate-50 from-sky-900 to-indigo-950 font-sans"
+  >
+    <div id="container" class="w-1/4">
+      <div class="flex justify-center">
+        <img
+          src="../assets/cristal-ball.svg"
+          alt="Imagem de uma bola de cristal"
+          class="w-32 h-32 flex justify-center m-2"
+        />
+      </div>
+
+      <h1 class="font-bold">Revelarei seu destino!</h1>
+      <p class="m-2">Clique em fazer pergunta para seu destino seja revelado</p>
+
+      <input
+        id="pergunta"
+        type="text"
+        placeholder="Digite sua pergunta"
+        class="w-full mb-4 p-2 border-2 rounded-md bg-transparent placeholder:text-center placeholder:font-semibold text-slate-50"
+      />
+      <button
+        onclick="Pergunta()"
+        class="w-full p-2 rounded-md bg-transparent border-2 font-semibold hover:bg-slate-50 hover:text-sky-900 duration-200"
+      >
+        Fazer Pergunta
+      </button>
+
+      <h3 id="resposta"></h3>
+      <script src="src/script.js"></script>
+    </div>
+  </body>
+</html>
